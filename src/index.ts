@@ -147,7 +147,7 @@ app.post("/signup", async function (req: Request, res: Response) {
     return res.status(422).send("Invalid inputs. Please insert valid inputs");
   }
 });
-
+//refer to suggestionNote.md for suggestions regarding scaling up in spikes
 app.post("/update", async function (req: Request, res: Response) {
   const { request } = req.body;
   // splitting the stats and signature
