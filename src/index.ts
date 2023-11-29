@@ -135,7 +135,7 @@ app.post("/signup", async function (req: Request, res: Response) {
           if (err) throw err;
           console.log("user added successfully", publicKey);
           // insert into a log table as well the success msg
-          return res.json({ privateKey: privateKey, publicKey: publicKey });
+          return res.json({ privateKey: privateKey });
         });
       }
     } catch (e) {
